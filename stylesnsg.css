@@ -1,0 +1,312 @@
+/* General Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Contenedor del encabezado */
+header .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+/* Estilo del título */
+header h1 {
+    margin-right: 20px;
+    font-size: 32px;
+    color: #6b4423;
+    flex-shrink: 0;
+}
+
+/* Sección de la barra de búsqueda e íconos */
+header .right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Barra de búsqueda */
+header .search-bar {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #6b4423;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+header .search-bar button:hover {
+    background-color: #5a371b;
+}
+
+/* Íconos */
+header .icons img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #6b4423; /* Color de fondo */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #5a371b;
+    border-radius: 5px;
+}
+
+/* Banner Section */
+.banner {
+    background: url('https://fatimamurciano.com/wp-content/uploads/2016/09/book-2869_1280.jpg?w=768') center/cover no-repeat;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.banner h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Section Headers */
+section h3, section h4 {
+    font-size: 1.5em;
+    margin: 20px 0;
+    color: red;
+}
+
+
+/* Recommendations & Books Section */
+.recommendations, .books {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Contenedor del scrollbar */
+.scroll-container {
+    overflow-x: scroll; /* Habilita el desplazamiento horizontal */
+    overflow-y: scroll; /* Habilita el desplazamiento vertical */
+    white-space: nowrap; /* Evita que los elementos se envuelvan en la siguiente línea */
+}
+
+/* Asegúrate de que los elementos en la lista se mantengan en una sola línea */
+.book-list, .book-table {
+    display: inline-flex; /* Cambia de flex a inline-flex */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ajuste de .book para mantener la misma apariencia */
+.book {
+    text-align: center;
+    max-width: 200px;
+    border: 1px solid #ddd; /* Opcional: agrega borde para visualizar mejor */
+    border-radius: 8px; /* Opcional: agrega bordes redondeados */
+    padding: 10px; /* Opcional: agrega espacio interno */
+    background-color: #fff; /* Opcional: agrega color de fondo blanco */
+    display: inline-block; /* Asegúrate de que los elementos .book se mantengan en línea */
+}
+
+.book img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* About Section */
+.about {
+    background-color: #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #d2b48c; /* Color de fondo del footer */
+    padding: 20px 0;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+footer table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+footer td {
+    vertical-align: top;
+    padding: 10px 20px;
+}
+
+footer h1 {
+    font-size: 18px;
+    color: #6b4423;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #6b4423; /* Línea debajo del título */
+    padding-bottom: 5px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #6b4423;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .newsletter input {
+    padding: 5px;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+footer .newsletter button {
+    padding: 5px 10px;
+    background-color: #6b4423;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+footer .newsletter button:hover {
+    background-color: #5a371b;
+}
+
+/* Estilo para los iconos en el footer */
+footer .contact-info img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer .contact-info p img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+footer .contact-info {
+    max-width: 300px;
+}
+
+footer .additional-info ul {
+    padding: 0;
+}
+
+footer .additional-info ul li {
+    margin-bottom: 5px;
+}
+
+footer .newsletter {
+    max-width: 300px;
+}
